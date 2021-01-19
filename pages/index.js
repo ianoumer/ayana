@@ -1,15 +1,11 @@
-import Head from 'next/head';
 import { Button, Text, Heading, Code } from '@chakra-ui/react';
 import { useAuth } from '@/lib/auth';
 
 const Home = () => {
   const auth = useAuth();
+  console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-
       <main>
         <Heading>Ayana</Heading>
 
